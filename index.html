@@ -1,298 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Divyanshu verma</div>
-      <div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divyanshu Verma | AI Engineer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+<nav id="desktop-nav">
+    <div class="logo">Divyanshu Verma</div>
+    <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Divyanshu verma</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Divyanshu verma profile picture" />
-      </div>
-      <div class="section__text">
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Divyanshu Verma">
+    </div>
+
+    <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Divyanshu verma</h1>
+        <h1 class="title">Divyanshu Verma</h1>
+
         <p class="section__text__p2">
-            <!-- Element to contain animated typing -->
             <span id="element"></span>
-            <!-- Load library from the CDN -->
-            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            <script>
-              var typed = new Typed('#element', {
-                strings: ['<i>Software</i> Engineer', '<i>Python</i> Developer','<i>Full Stack</i> Engineer'],
-                typeSpeed: 50,
-              });
-            </script>
         </p>
+
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Divyanshu.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+            <button class="btn btn-color-2" onclick="window.open('./assets/Divyanshu.pdf')">
+                Download Resume
+            </button>
+
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Me
+            </button>
         </div>
+
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/Divyanshu-verma-div'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/divyanshu-verma1'"
-          />
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+                 onclick="location.href='https://www.linkedin.com/in/divyanshu-verma-div/'" />
+
+            <img src="./assets/github.png" alt="Github" class="icon"
+                 onclick="location.href='https://github.com/divyanshu-verma1'" />
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>0-1 years <br />Software Engineer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>M.Tech. Master's of Technology</p>
-              <p>CSE with specilisation in AI/ML</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Full-Stack Developer proficient in cutting-edge web development, database design, Python, GIT, and Agile
-methodologies. Exceptional in Data Structures & Algorithms, python backend, frontend, and server deployment. Committed to
-collaborative synergy and transparent communication for unparalleled project delivery.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+    </div>
+</section>
+
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="about-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Expert</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+
+            <div class="details-container">
+                <h3>Experience</h3>
+                <p>2+ Years</p>
+                <p>AI Engineer & Data Scientist</p>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
+
+            <div class="details-container">
+                <h3>Education</h3>
+                <p>M.Tech CSE (AI/ML)</p>
+                <p>CGPA: 9.11</p>
             </div>
-          </div>
+
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+
+        <div class="text-container">
+            <p>
+                AI Engineer and Data Scientist with hands-on experience building
+                Generative AI, Agentic AI, RAG systems, NLP solutions, and enterprise
+                automation platforms using CrewAI, AWS Bedrock, Azure OpenAI, FastAPI,
+                Docker, Kubernetes, and Python.
+                Passionate about building scalable AI products that combine LLMs,
+                intelligent agents, cloud services, and modern software engineering.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="stats">
+    <h1 class="title">Highlights</h1>
+
+    <div class="about-containers">
+        <div class="details-container">
+            <h2>100+</h2>
+            <p>Emails Automated Daily</p>
+        </div>
+
+        <div class="details-container">
+            <h2>49%</h2>
+            <p>Response Time Reduction</p>
+        </div>
+
+        <div class="details-container">
+            <h2>2+</h2>
+            <p>Years Experience</p>
+        </div>
+
+        <div class="details-container">
+            <h2>10+</h2>
+            <p>AI Technologies</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+
+    <div class="about-containers">
+
+        <div class="details-container">
+            <h2 class="experience-sub-title">AI & ML</h2>
+            <p>Generative AI</p>
+            <p>CrewAI</p>
+            <p>AWS Bedrock</p>
+            <p>RAG</p>
+            <p>NLP</p>
+            <p>Deep Learning</p>
+            <p>Scikit-Learn</p>
+            <p>TensorFlow</p>
+        </div>
+
+        <div class="details-container">
+            <h2 class="experience-sub-title">Engineering</h2>
+            <p>Python</p>
+            <p>FastAPI</p>
+            <p>Flask</p>
+            <p>Django</p>
+            <p>Docker</p>
+            <p>Kubernetes</p>
+            <p>AWS</p>
+            <p>MongoDB</p>
+            <p>SQL</p>
+            <p>Git</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="experience">
+    <p class="section__text__p1">My Professional Journey</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="details-container">
+        <h2>Tavant Technologies</h2>
+        <h3>Junior Data Scientist | Dec 2024 - Present</h3>
+
+        <ul>
+            <li>Built a multi-agent AI automation platform using CrewAI, AWS Bedrock and Python.</li>
+            <li>Automated processing of 100+ IT support emails per day.</li>
+            <li>Reduced response time by 49% through intelligent automation.</li>
+            <li>Developed RAG pipelines and NLP classification systems.</li>
+            <li>Integrated Jira, Microsoft Graph, MongoDB and ELK stack.</li>
+            <li>Worked with AWS ECS, Lambda, S3 and Dockerized deployments.</li>
+        </ul>
+
+        <h3>Software Engineer Trainee</h3>
+
+        <ul>
+            <li>Built code-generation agents using CrewAI and Azure OpenAI.</li>
+            <li>Developed MCP servers for dynamic tool orchestration.</li>
+            <li>Built Streamlit applications and AI-powered workflows.</li>
+            <li>Implemented image segmentation using SAM and Samurai models.</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="details-container">
+        <h2>Nokia</h2>
+        <h3>Student Intern | Aug 2023 - May 2024</h3>
+
+        <ul>
+            <li>Developed Flask APIs and backend services.</li>
+            <li>Containerized applications using Docker.</li>
+            <li>Managed deployments using Kubernetes.</li>
+            <li>Implemented concurrent programming in Python and Golang.</li>
+            <li>Improved development workflows using CI/CD pipelines.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="about-containers">
+
+        <div class="details-container">
+            <h2>Enterprise AI ITOps Automation Platform</h2>
+            <p>
+                Multi-agent enterprise AI solution built using CrewAI,
+                AWS Bedrock, RAG pipelines, Jira integrations,
+                Microsoft Graph and cloud-native deployment.
+            </p>
+        </div>
+
+        <div class="details-container">
+            <h2>Image Classification using CNN Ensemble</h2>
+            <p>
+                Developed an ensemble-based image classification system
+                using TensorFlow and Scikit-Learn, reducing false positives by 20%.
+            </p>
+        </div>
+
+        <div class="details-container">
+            <h2>Fruit Classification using CNN</h2>
+            <p>
+                Built a deep learning solution using TensorFlow and OpenCV
+                achieving 92% classification accuracy.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-info-upper-container">
+
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:Divyanshuverma111@gmail.com" style="color: black;">Gmail</a></p>
+            <p>
+                <a href="mailto:Divyanshuverma111@gmail.com">
+                    Divyanshuverma111@gmail.com
+                </a>
+            </p>
         </div>
+
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/divyanshu-verma-div/" style="color: black;">LinkedIn</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/divyanshu-verma-div/">
+                    LinkedIn Profile
+                </a>
+            </p>
         </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about" style="color: black;">About</a></li>
-            <li><a href="#experience" style="color: black;">Experience</a></li>
-            <li><a href="project.html" style="color: black;">Projects</a></li>
-            <li><a href="#contact" style="color: black;">Contact</a></li>
-          </ul>
+
+        <div class="contact-info-container">
+            <p>
+                <a href="https://github.com/divyanshu-verma1">
+                    GitHub Profile
+                </a>
+            </p>
         </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+    </div>
+</section>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+new Typed('#element', {
+    strings: [
+        '<i>Generative AI</i> Engineer',
+        '<i>LLM & Agentic AI</i> Engineer',
+        '<i>AI/ML</i> Engineer',
+        '<i>Data Scientist</i>'
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+});
+</script>
+
+</body>
 </html>
