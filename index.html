@@ -1,278 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divyanshu Verma | AI Engineer</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="mediaqueries.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Divyanshu Verma | AI / LLM Engineer</title>
+
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="mediaqueries.css"/>
 </head>
+
 <body>
 
+<!-- ================= NAV ================= -->
+<header>
 <nav id="desktop-nav">
-    <div class="logo">Divyanshu Verma</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+  <div class="logo">Divyanshu Verma</div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
+</header>
 
+<!-- ================= HERO ================= -->
 <section id="profile">
-    <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Divyanshu Verma">
+  <div class="section__pic-container">
+    <img src="./assets/profile-pic.png" alt="Divyanshu Verma profile"/>
+  </div>
+
+  <div class="section__text">
+    <p>Hello, I'm</p>
+    <h1 class="title">Divyanshu Verma</h1>
+
+    <p class="section__text__p2">
+      <span id="element"></span>
+    </p>
+
+    <div class="btn-container">
+      <button onclick="window.open('./assets/Divyanshu.pdf')">
+        Download Resume
+      </button>
+
+      <button onclick="location.href='#contact'">
+        Contact Me
+      </button>
     </div>
 
-    <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Divyanshu Verma</h1>
+    <div id="socials-container">
+      <img src="./assets/linkedin.png"
+           onclick="location.href='https://www.linkedin.com/in/divyanshu-verma-div/'"
+           alt="LinkedIn"/>
 
-        <p class="section__text__p2">
-            <span id="element"></span>
-        </p>
-
-        <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/Divyanshu.pdf')">
-                Download Resume
-            </button>
-
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Me
-            </button>
-        </div>
-
-        <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
-                 onclick="location.href='https://www.linkedin.com/in/divyanshu-verma-div/'" />
-
-            <img src="./assets/github.png" alt="Github" class="icon"
-                 onclick="location.href='https://github.com/divyanshu-verma1'" />
-        </div>
+      <img src="./assets/github.png"
+           onclick="location.href='https://github.com/divyanshu-verma1'"
+           alt="GitHub"/>
     </div>
+  </div>
 </section>
 
+<!-- ================= ABOUT ================= -->
 <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
+  <h2>About Me</h2>
 
-    <div class="about-details-container">
-        <div class="about-containers">
+  <div class="card">
 
-            <div class="details-container">
-                <h3>Experience</h3>
-                <p>2+ Years</p>
-                <p>AI Engineer & Data Scientist</p>
-            </div>
+    <div class="grid-2">
+      <div class="info-box">
+        <h3>Experience</h3>
+        <p>2+ Years</p>
+        <p>AI Engineer / Data Scientist</p>
+      </div>
 
-            <div class="details-container">
-                <h3>Education</h3>
-                <p>M.Tech CSE (AI/ML)</p>
-                <p>CGPA: 9.11</p>
-            </div>
-
-        </div>
-
-        <div class="text-container">
-            <p>
-                AI Engineer and Data Scientist with hands-on experience building
-                Generative AI, Agentic AI, RAG systems, NLP solutions, and enterprise
-                automation platforms using CrewAI, AWS Bedrock, Azure OpenAI, FastAPI,
-                Docker, Kubernetes, and Python.
-                Passionate about building scalable AI products that combine LLMs,
-                intelligent agents, cloud services, and modern software engineering.
-            </p>
-        </div>
+      <div class="info-box">
+        <h3>Education</h3>
+        <p>M.Tech CSE (AI/ML)</p>
+        <p>CGPA: 9.11</p>
+      </div>
     </div>
+
+    <p class="about-text">
+      AI Engineer specializing in Generative AI, LLM systems, Agentic AI workflows,
+      RAG pipelines, and enterprise AI automation. Experienced in building production-grade
+      AI systems using CrewAI, AWS Bedrock, Azure OpenAI, FastAPI, Docker, and Kubernetes.
+    </p>
+
+  </div>
 </section>
 
+<!-- ================= STATS ================= -->
 <section id="stats">
-    <h1 class="title">Highlights</h1>
+  <h2>Impact Highlights</h2>
 
-    <div class="about-containers">
-        <div class="details-container">
-            <h2>100+</h2>
-            <p>Emails Automated Daily</p>
-        </div>
+  <div class="grid-4">
 
-        <div class="details-container">
-            <h2>49%</h2>
-            <p>Response Time Reduction</p>
-        </div>
-
-        <div class="details-container">
-            <h2>2+</h2>
-            <p>Years Experience</p>
-        </div>
-
-        <div class="details-container">
-            <h2>10+</h2>
-            <p>AI Technologies</p>
-        </div>
+    <div class="stat-card">
+      <h3>100+</h3>
+      <p>Emails processed/day</p>
     </div>
+
+    <div class="stat-card">
+      <h3>49%</h3>
+      <p>Response time reduction</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>2+</h3>
+      <p>Years experience</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>10+</h3>
+      <p>AI tools mastered</p>
+    </div>
+
+  </div>
 </section>
 
+<!-- ================= SKILLS ================= -->
 <section id="skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
+  <h2>Skills</h2>
 
-    <div class="about-containers">
+  <div class="grid-2">
 
-        <div class="details-container">
-            <h2 class="experience-sub-title">AI & ML</h2>
-            <p>Generative AI</p>
-            <p>CrewAI</p>
-            <p>AWS Bedrock</p>
-            <p>RAG</p>
-            <p>NLP</p>
-            <p>Deep Learning</p>
-            <p>Scikit-Learn</p>
-            <p>TensorFlow</p>
-        </div>
-
-        <div class="details-container">
-            <h2 class="experience-sub-title">Engineering</h2>
-            <p>Python</p>
-            <p>FastAPI</p>
-            <p>Flask</p>
-            <p>Django</p>
-            <p>Docker</p>
-            <p>Kubernetes</p>
-            <p>AWS</p>
-            <p>MongoDB</p>
-            <p>SQL</p>
-            <p>Git</p>
-        </div>
-
+    <div class="card">
+      <h3>AI / Machine Learning</h3>
+      <ul>
+        <li>Generative AI</li>
+        <li>LLM Systems</li>
+        <li>RAG Pipelines</li>
+        <li>CrewAI (Multi-agent systems)</li>
+        <li>AWS Bedrock</li>
+        <li>NLP</li>
+        <li>Deep Learning</li>
+        <li>Scikit-Learn</li>
+      </ul>
     </div>
+
+    <div class="card">
+      <h3>Engineering</h3>
+      <ul>
+        <li>Python</li>
+        <li>FastAPI</li>
+        <li>Flask / Django</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>AWS (Lambda, ECS, S3)</li>
+        <li>MongoDB / SQL</li>
+        <li>Git</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
 
+<!-- ================= EXPERIENCE ================= -->
 <section id="experience">
-    <p class="section__text__p1">My Professional Journey</p>
-    <h1 class="title">Experience</h1>
+  <h2>Experience</h2>
 
-    <div class="details-container">
-        <h2>Tavant Technologies</h2>
-        <h3>Junior Data Scientist | Dec 2024 - Present</h3>
+  <div class="timeline">
 
-        <ul>
-            <li>Built a multi-agent AI automation platform using CrewAI, AWS Bedrock and Python.</li>
-            <li>Automated processing of 100+ IT support emails per day.</li>
-            <li>Reduced response time by 49% through intelligent automation.</li>
-            <li>Developed RAG pipelines and NLP classification systems.</li>
-            <li>Integrated Jira, Microsoft Graph, MongoDB and ELK stack.</li>
-            <li>Worked with AWS ECS, Lambda, S3 and Dockerized deployments.</li>
-        </ul>
+    <div class="timeline-item">
+      <h3>Tavant Technologies</h3>
+      <h4>Junior Data Scientist (Dec 2024 – Present)</h4>
 
-        <h3>Software Engineer Trainee</h3>
-
-        <ul>
-            <li>Built code-generation agents using CrewAI and Azure OpenAI.</li>
-            <li>Developed MCP servers for dynamic tool orchestration.</li>
-            <li>Built Streamlit applications and AI-powered workflows.</li>
-            <li>Implemented image segmentation using SAM and Samurai models.</li>
-        </ul>
+      <ul>
+        <li>Built multi-agent AI system using CrewAI + AWS Bedrock</li>
+        <li>Automated 100+ IT support emails/day</li>
+        <li>Reduced response time by 49%</li>
+        <li>Built RAG pipelines and NLP classification systems</li>
+        <li>Integrated Jira, MongoDB, Microsoft Graph, ELK stack</li>
+        <li>Deployed on AWS ECS, Lambda, S3 using Docker</li>
+      </ul>
     </div>
 
-    <br>
+    <div class="timeline-item">
+      <h3>Nokia</h3>
+      <h4>Intern (Aug 2023 – May 2024)</h4>
 
-    <div class="details-container">
-        <h2>Nokia</h2>
-        <h3>Student Intern | Aug 2023 - May 2024</h3>
-
-        <ul>
-            <li>Developed Flask APIs and backend services.</li>
-            <li>Containerized applications using Docker.</li>
-            <li>Managed deployments using Kubernetes.</li>
-            <li>Implemented concurrent programming in Python and Golang.</li>
-            <li>Improved development workflows using CI/CD pipelines.</li>
-        </ul>
+      <ul>
+        <li>Built Flask APIs and backend services</li>
+        <li>Dockerized applications</li>
+        <li>Used Kubernetes for deployments</li>
+        <li>Implemented concurrency in Python & Golang</li>
+        <li>Improved CI/CD pipelines</li>
+      </ul>
     </div>
+
+  </div>
 </section>
 
+<!-- ================= PROJECTS ================= -->
 <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
+  <h2>Projects</h2>
 
-    <div class="about-containers">
+  <div class="grid-3">
 
-        <div class="details-container">
-            <h2>Enterprise AI ITOps Automation Platform</h2>
-            <p>
-                Multi-agent enterprise AI solution built using CrewAI,
-                AWS Bedrock, RAG pipelines, Jira integrations,
-                Microsoft Graph and cloud-native deployment.
-            </p>
-        </div>
-
-        <div class="details-container">
-            <h2>Image Classification using CNN Ensemble</h2>
-            <p>
-                Developed an ensemble-based image classification system
-                using TensorFlow and Scikit-Learn, reducing false positives by 20%.
-            </p>
-        </div>
-
-        <div class="details-container">
-            <h2>Fruit Classification using CNN</h2>
-            <p>
-                Built a deep learning solution using TensorFlow and OpenCV
-                achieving 92% classification accuracy.
-            </p>
-        </div>
-
+    <div class="card">
+      <h3>AI IT Ops Platform</h3>
+      <p>
+        Multi-agent system using CrewAI, AWS Bedrock, RAG, and enterprise integrations.
+      </p>
     </div>
+
+    <div class="card">
+      <h3>CNN Ensemble Model</h3>
+      <p>
+        Reduced false positives by 20% using ensemble learning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fruit Classification</h3>
+      <p>
+        92% accuracy using CNN + OpenCV + TensorFlow.
+      </p>
+    </div>
+
+  </div>
 </section>
 
+<!-- ================= CONTACT ================= -->
 <section id="contact">
-    <p class="section__text__p1">Get In Touch</p>
-    <h1 class="title">Contact Me</h1>
+  <h2>Contact</h2>
 
-    <div class="contact-info-upper-container">
-
-        <div class="contact-info-container">
-            <p>
-                <a href="mailto:Divyanshuverma111@gmail.com">
-                    Divyanshuverma111@gmail.com
-                </a>
-            </p>
-        </div>
-
-        <div class="contact-info-container">
-            <p>
-                <a href="https://www.linkedin.com/in/divyanshu-verma-div/">
-                    LinkedIn Profile
-                </a>
-            </p>
-        </div>
-
-        <div class="contact-info-container">
-            <p>
-                <a href="https://github.com/divyanshu-verma1">
-                    GitHub Profile
-                </a>
-            </p>
-        </div>
-
-    </div>
+  <div class="card">
+    <p>Email: Divyanshuverma111@gmail.com</p>
+    <p>
+      <a href="https://linkedin.com">LinkedIn</a> |
+      <a href="https://github.com">GitHub</a>
+    </p>
+  </div>
 </section>
 
+<!-- ================= SCRIPT ================= -->
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 <script>
 new Typed('#element', {
-    strings: [
-        '<i>Generative AI</i> Engineer',
-        '<i>LLM & Agentic AI</i> Engineer',
-        '<i>AI/ML</i> Engineer',
-        '<i>Data Scientist</i>'
-    ],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true
+  strings: [
+    "Generative AI Engineer",
+    "LLM Engineer",
+    "Agentic AI Engineer",
+    "AI/ML Engineer"
+  ],
+  typeSpeed: 50,
+  backSpeed: 30,
+  loop: true
 });
 </script>
 
