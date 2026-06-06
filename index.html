@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Divyanshu Verma, AI Engineer and Data Scientist specializing in Generative AI, RAG systems, and enterprise automation.">
 <title>Divyanshu Verma | AI Engineer</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="mediaqueries.css">
@@ -16,7 +17,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="project.html">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -24,33 +25,27 @@
 
 <section id="profile">
     <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Divyanshu Verma">
+        <img src="./assets/profile-pic.png" alt="Portrait of Divyanshu Verma">
     </div>
-
     <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Divyanshu Verma</h1>
-
-        <p class="section__text__p2">
-            <span id="element"></span>
-        </p>
-
+        <p class="section__text__p2"><span id="element"></span></p>
         <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/Divyanshu.pdf')">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Divyanshu.pdf', '_blank')" aria-label="Download Resume">
                 Download Resume
             </button>
-
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            <button class="btn btn-color-1" onclick="location.href='./#contact'" aria-label="Contact Me">
                 Contact Me
             </button>
         </div>
-
         <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
-                 onclick="location.href='https://www.linkedin.com/in/divyanshu-verma-div/'" />
-
-            <img src="./assets/github.png" alt="Github" class="icon"
-                 onclick="location.href='https://github.com/divyanshu-verma1'" />
+            <a href="https://www.linkedin.com/in/divyanshu-verma-div/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+            </a>
+            <a href="https://github.com/divyanshu-verma1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <img src="./assets/github.png" alt="Github" class="icon" />
+            </a>
         </div>
     </div>
 </section>
@@ -58,24 +53,19 @@
 <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
-
     <div class="about-details-container">
         <div class="about-containers">
-
             <div class="details-container">
                 <h3>Experience</h3>
                 <p>2+ Years</p>
                 <p>AI Engineer & Data Scientist</p>
             </div>
-
             <div class="details-container">
                 <h3>Education</h3>
                 <p>M.Tech CSE (AI/ML)</p>
                 <p>CGPA: 9.11</p>
             </div>
-
         </div>
-
         <div class="text-container">
             <p>
                 AI Engineer and Data Scientist with hands-on experience building
@@ -91,23 +81,19 @@
 
 <section id="stats">
     <h1 class="title">Highlights</h1>
-
     <div class="about-containers">
         <div class="details-container">
             <h2>100+</h2>
             <p>Emails Automated Daily</p>
         </div>
-
         <div class="details-container">
             <h2>49%</h2>
             <p>Response Time Reduction</p>
         </div>
-
         <div class="details-container">
             <h2>2+</h2>
             <p>Years Experience</p>
         </div>
-
         <div class="details-container">
             <h2>10+</h2>
             <p>AI Technologies</p>
@@ -118,9 +104,7 @@
 <section id="skills">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Skills</h1>
-
     <div class="about-containers">
-
         <div class="details-container">
             <h2 class="experience-sub-title">AI & ML</h2>
             <p>Generative AI</p>
@@ -132,7 +116,6 @@
             <p>Scikit-Learn</p>
             <p>TensorFlow</p>
         </div>
-
         <div class="details-container">
             <h2 class="experience-sub-title">Engineering</h2>
             <p>Python</p>
@@ -146,18 +129,15 @@
             <p>SQL</p>
             <p>Git</p>
         </div>
-
     </div>
 </section>
 
 <section id="experience">
     <p class="section__text__p1">My Professional Journey</p>
     <h1 class="title">Experience</h1>
-
     <div class="details-container">
         <h2>Tavant Technologies</h2>
         <h3>Junior Data Scientist | Dec 2024 - Present</h3>
-
         <ul>
             <li>Built a multi-agent AI automation platform using CrewAI, AWS Bedrock and Python.</li>
             <li>Automated processing of 100+ IT support emails per day.</li>
@@ -166,9 +146,7 @@
             <li>Integrated Jira, Microsoft Graph, MongoDB and ELK stack.</li>
             <li>Worked with AWS ECS, Lambda, S3 and Dockerized deployments.</li>
         </ul>
-
         <h3>Software Engineer Trainee</h3>
-
         <ul>
             <li>Built code-generation agents using CrewAI and Azure OpenAI.</li>
             <li>Developed MCP servers for dynamic tool orchestration.</li>
@@ -176,13 +154,10 @@
             <li>Implemented image segmentation using SAM and Samurai models.</li>
         </ul>
     </div>
-
     <br>
-
     <div class="details-container">
         <h2>Nokia</h2>
         <h3>Student Intern | Aug 2023 - May 2024</h3>
-
         <ul>
             <li>Developed Flask APIs and backend services.</li>
             <li>Containerized applications using Docker.</li>
@@ -196,9 +171,7 @@
 <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
-
     <div class="about-containers">
-
         <div class="details-container">
             <h2>Enterprise AI ITOps Automation Platform</h2>
             <p>
@@ -207,7 +180,6 @@
                 Microsoft Graph and cloud-native deployment.
             </p>
         </div>
-
         <div class="details-container">
             <h2>Image Classification using CNN Ensemble</h2>
             <p>
@@ -215,7 +187,6 @@
                 using TensorFlow and Scikit-Learn, reducing false positives by 20%.
             </p>
         </div>
-
         <div class="details-container">
             <h2>Fruit Classification using CNN</h2>
             <p>
@@ -223,45 +194,32 @@
                 achieving 92% classification accuracy.
             </p>
         </div>
-
     </div>
 </section>
 
 <section id="contact">
     <p class="section__text__p1">Get In Touch</p>
     <h1 class="title">Contact Me</h1>
-
     <div class="contact-info-upper-container">
-
         <div class="contact-info-container">
             <p>
-                <a href="mailto:Divyanshuverma111@gmail.com">
-                    Divyanshuverma111@gmail.com
-                </a>
+                <a href="mailto:Divyanshuverma111@gmail.com" >Divyanshuverma111@gmail.com</a>
             </p>
         </div>
-
         <div class="contact-info-container">
             <p>
-                <a href="https://www.linkedin.com/in/divyanshu-verma-div/">
-                    LinkedIn Profile
-                </a>
+                <a href="https://www.linkedin.com/in/divyanshu-verma-div/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
             </p>
         </div>
-
         <div class="contact-info-container">
             <p>
-                <a href="https://github.com/divyanshu-verma1">
-                    GitHub Profile
-                </a>
+                <a href="https://github.com/divyanshu-verma1" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
             </p>
         </div>
-
     </div>
 </section>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
 <script>
 new Typed('#element', {
     strings: [
